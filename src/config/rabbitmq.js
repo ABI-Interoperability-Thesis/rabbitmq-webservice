@@ -1,6 +1,8 @@
 require('dotenv').config();
 const amqp = require('amqplib')
 const endpoints = require('./endpoints.json')
+const {UpdateRequest} = require('../utils/mysql-ws')
+
 const runtime_env = process.env.ENV
 const rabbit_user = process.env.RABBIT_USERNAME
 const rabbit_password = process.env.RABBIT_PASSWORD
@@ -49,7 +51,7 @@ const checkRabbitMQServer = async () => {
         console.log('msg received')
       const response = JSON.parse(message.content.toString());
       console.log(response)
-      //utils.UpdateRequest(response.req_id, response.answer)
+      UpdateRequest(response.req_id, response.answer)
     }, { noAck: true });
   }
   
