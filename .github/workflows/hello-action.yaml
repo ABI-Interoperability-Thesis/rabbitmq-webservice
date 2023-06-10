@@ -1,0 +1,15 @@
+name: Use Hello Workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  use_hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Use Hello Workflow
+        uses: ABI-Interoperability-Thesis/reusable-actions/blob/main/misc/hello.yaml@main
+        with:
+          who_to_greet: "World"
