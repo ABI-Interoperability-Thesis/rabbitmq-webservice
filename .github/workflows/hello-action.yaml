@@ -10,6 +10,6 @@ jobs:
 
     steps:
       - name: Use Hello Workflow
-        uses: ABI-Interoperability-Thesis/reusable-actions/blob/main/misc/hello.yaml@main
+        uses: https://github.com/ABI-Interoperability-Thesis/reusable-actions/blob/main/misc/hello.yaml@main
         with:
           who_to_greet: "World"
