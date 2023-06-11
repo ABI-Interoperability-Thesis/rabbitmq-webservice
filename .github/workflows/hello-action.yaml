@@ -1,16 +1,15 @@
-name: Reusable workflow hello
+name: Use Hello Workflow
 on:
   push:
     branches:
       - main
 
 jobs:
-  hello:
+  use_hello:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Print Hello
-        run: echo "Hello world"
+      - name: Use Hello Workflow
+        uses: ABI-Interoperability-Thesis/reusable-actions/misc/hello.yaml@main
+        with:
+          who-to-greet: "World"
