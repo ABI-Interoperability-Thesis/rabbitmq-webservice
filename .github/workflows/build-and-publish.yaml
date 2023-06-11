@@ -8,4 +8,4 @@ jobs:
   use_hello:
     uses: ABI-Interoperability-Thesis/reusable-actions/.github/workflows/build-image.yaml@main
     with:
-      who-to-greet: "World"
+      service-name: "rabbitmq-webservice"
