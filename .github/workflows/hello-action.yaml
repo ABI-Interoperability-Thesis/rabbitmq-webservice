@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        
       - name: Use Hello Workflow
         uses: ABI-Interoperability-Thesis/reusable-actions/misc/hello.yaml@main
         with:
