@@ -9,7 +9,7 @@ const {listenToRabbitMQ} = require('./config/rabbitmq')
 app.use(express.json())
 
 // Landing Page for the webservice
-app.get('/', (req,res)=>res.send('RabbitMQ Webservice'))
+app.get('/', (req,res)=>res.send('RabbitMQ Webservice #2'))
 
 //Routing /api requests to the api router
 const apiRoutes = require('./routes/rabbit')
