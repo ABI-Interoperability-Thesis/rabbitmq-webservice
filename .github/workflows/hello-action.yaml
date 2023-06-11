@@ -6,6 +6,6 @@ on:
 
 jobs:
   use_hello:
-    uses: ABI-Interoperability-Thesis/reusable-actions/.github/workflows/misc/hello.yaml@main
+    uses: ABI-Interoperability-Thesis/reusable-actions/.github/workflows/hello.yaml@main
     with:
       who-to-greet: "World"
