@@ -6,10 +6,6 @@ on:
 
 jobs:
   use_hello:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Use Hello Workflow
-        uses: ABI-Interoperability-Thesis/reusable-actions/misc/hello.yaml@main
-        with:
-          who-to-greet: "World"
+    uses: ABI-Interoperability-Thesis/reusable-actions/misc/hello.yaml@main
+    with:
+      who-to-greet: "World"
