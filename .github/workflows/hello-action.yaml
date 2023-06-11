@@ -13,6 +13,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Use Hello Workflow
-        uses: https://github.com/ABI-Interoperability-Thesis/reusable-actions/blob/main/misc/hello.yaml
+        uses: ABI-Interoperability-Thesis/reusable-actions/misc/hello.yaml@main
         with:
           who_to_greet: "World"
