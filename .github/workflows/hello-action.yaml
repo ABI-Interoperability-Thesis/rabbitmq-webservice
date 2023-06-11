@@ -11,8 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        
+
       - name: Use Hello Workflow
-        uses: ABI-Interoperability-Thesis/reusable-actions/misc/hello.yaml@main
+        uses: https://github.com/ABI-Interoperability-Thesis/reusable-actions/blob/main/misc/hello.yaml
         with:
           who_to_greet: "World"
