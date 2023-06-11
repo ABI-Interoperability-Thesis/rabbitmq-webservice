@@ -9,5 +9,3 @@ jobs:
     uses: ABI-Interoperability-Thesis/reusable-actions/.github/workflows/build-image.yaml@main
     with:
       service-name: "rabbitmq-webservice"
-      docker-login-username: ${{ github.repository_owner }}
-      docker-login-password: ${{ secrets.ACTION_TOKEN }}
