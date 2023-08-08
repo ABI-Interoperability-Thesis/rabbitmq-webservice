@@ -7,7 +7,7 @@ const runtime_env = process.env.ENV
 const rabbit_user = process.env.RABBIT_USERNAME
 const rabbit_password = process.env.RABBIT_PASSWORD
 
-const endpoint = endpoints['rabbitmq'][runtime_env]
+const endpoint = process.env.RABBIT_MQ_HOST
 const rabbit_url = `amqp://${rabbit_user}:${rabbit_password}@${endpoint}`
 
 const GenerateRabbitURL = () => {

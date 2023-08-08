@@ -1,7 +1,7 @@
 {
     "rabbitmq": {
         "dev": "127.0.0.1:5672",
-        "local": "rabbitmq",
+        "local": "rabbitmq:5672",
         "prod": "192.168.233.54:5672"
     },
     "mysql":{

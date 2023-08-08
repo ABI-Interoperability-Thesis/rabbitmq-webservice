@@ -2,7 +2,7 @@ require('dotenv').config();
 const endpoints = require('../config/endpoints.json')
 const axios = require('axios');
 const runtime_env = process.env.ENV
-const endpoint = endpoints['mysql'][runtime_env]
+const endpoint = process.env.MYSQL_SERVICE_ENDPOINT
 
 const UpdateRequest = (req_id, answer) => {
     var data = JSON.stringify({
