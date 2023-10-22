@@ -5,11 +5,12 @@ const swaggerDocument = require('../swagger/swagger.json')
 const app = express()
 const port = process.env.PORT || 3000
 const {listenToRabbitMQ} = require('./config/rabbitmq')
+const runtime_env = process.env.RUNTIME_ENV || 'Not specified'
 
 app.use(express.json())
 
 // Landing Page for the webservice
-app.get('/', (req,res)=>res.send('RabbitMQ Webservice #2'))
+app.get('/', (req,res)=>res.send(`RabbitMQ Microservice | ${runtime_env}. Visit /api-docs for all route documentation.`))
 
 
 //Routing /api requests to the api router
